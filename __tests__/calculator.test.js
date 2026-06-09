@@ -208,7 +208,7 @@ describe('Calculator - Edge Cases', () => {
     test('should handle zero division gracefully', () => {
         setCurrentExpression('5/0');
         const result = calculateResult();
-        expect(result).toBe(Infinity);
+        expect(result).toBe(null);
     });
 
     test('should handle negative numbers', () => {
