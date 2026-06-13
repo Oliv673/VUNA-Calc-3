@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VUNA Calculator - Fibonacci Special Function" />
+  <title>VUNA Calculator - Fibonacci</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* Main centered box */
+    .info-box {
+      max-width: 600px;
+      width: 100%;
+      background: white;
+      border-radius: 20px;
+      padding: 50px 40px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1), 0 0 0 1px #e5e7eb;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .info-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.15), 0 0 0 1px #d1d5db;
+    }
+
+    /* Name section */
+    .name-section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    .student-name {
+      font-size: 28px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .matrix-number {
+      font-size: 16px;
+      color: #666;
+      font-family: monospace;
+      letter-spacing: 1px;
+    }
+
+    /* Welcome section */
+    .welcome-section {
+      margin-bottom: 35px;
+    }
+
+    .welcome-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 15px;
+    }
+
+    .welcome-icon {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    /* Fibonacci section */
+    .fibonacci-section {
+      background: #f8f9fa;
+      border-radius: 16px;
+      padding: 25px;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .fibonacci-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .fibonacci-badge {
+      background: #1a1a2e;
+      color: white;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .fibonacci-description {
+      color: #333;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .fibonacci-formula {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      font-family: monospace;
+      font-size: 14px;
+      color: #1a1a2e;
+      margin: 15px 0;
+      text-align: center;
+      border: 1px solid #e5e7eb;
+    }
+
+    .fibonacci-example {
+      background: #e8f0fe;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 14px;
+      color: #1a1a2e;
+      margin-top: 15px;
+    }
+
+    .fibonacci-example strong {
+      color: #1a1a2e;
+    }
+
+    /* Calculator link */
+    .calculator-link {
+      margin-top: 30px;
+    }
+
+    .calc-button {
+      display: inline-block;
+      background: #1a1a2e;
+      color: white;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .calc-button:hover {
+      background: #2d2d44;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Divider */
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: #e5e7eb;
+      margin: 25px auto 0;
+      border-radius: 3px;
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .info-box {
+        padding: 35px 25px;
+      }
+
+      .student-name {
+        font-size: 24px;
+      }
+
+      .welcome-title {
+        font-size: 26px;
+      }
+
+      .fibonacci-title {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="info-box">
+    <!-- Name and Matrix Number -->
+    <div class="name-section">
+      <div class="student-name">Aneke Olivia</div>
+      <div class="matrix-number">MATRIC NO:VUG/SEN/22/8304</div>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+      <div class="welcome-icon">🧮</div>
+      <div class="welcome-title">Welcome to VUNA Calculator</div>
+    </div>
+
+    <!-- Fibonacci Special Function Explanation -->
+    <div class="fibonacci-section">
+      <div class="fibonacci-title">
+        <span>🔢</span> Special Function: Fibonacci
+        <span class="fibonacci-badge">BONUS</span>
+      </div>
+      <div class="fibonacci-description">
+        The <strong>Fibonacci sequence</strong> is a series of numbers where each number is the sum of the two preceding ones.
+        It usually starts with 0 and 1, and the next number is found by adding up the two numbers before it.
+      </div>
+      
+      <div class="fibonacci-formula">
+        <strong>Formula:</strong> F(n) = F(n-1) + F(n-2)<br>
+        Starting values: F(0) = 0, F(1) = 1
+      </div>
+      
+      <div class="fibonacci-description">
+        This powerful mathematical pattern appears throughout nature, art, and computer science. 
+        Our calculator includes a special <strong>Fibonacci function</strong> that allows you to:
+      </div>
+      
+      <div class="fibonacci-example">
+        <strong>✨ How it works:</strong><br>
+        • Enter any position (n) and get the nth Fibonacci number<br>
+        • Example: Fibonacci(10) = 55<br>
+        • Example: Fibonacci(20) = 6765<br>
+        • Use it for algorithm analysis, sequence generation, and mathematical exploration
+      </div>
+    </div>
+
+    <!-- Link to Calculator -->
+    <div class="calculator-link">
+      <a href="calculator.html" class="calc-button">Go to Calculator →</a>
+    </div>
+    
+    <div class="divider"></div>
+  </div>
+</body>
+
+</html>
